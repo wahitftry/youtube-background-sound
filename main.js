@@ -75,6 +75,7 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   event.target.setVolume(90)
   setInitialVolumeForAudios(90)
+  event.target.playVideo()
 }
 
 function loadVideo() {
