@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Youtube Background Sound</title>
+  <title>Listen & Calm</title>
   <script src="main.js" defer></script>
   <link rel="shortcut icon" href="/assets/image/favicon.svg" type="image/x-svg" />
 
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -17,17 +17,17 @@
   <meta name="description" content="Listen to Youtube music while coding, studying by combining ambient sounds">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://ytbgsound.vercel.app/">
+  <meta property="og:url" content="https://calm.wahit.me">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Youtube Background Sound">
+  <meta property="og:title" content="Listen & Calm">
   <meta property="og:description" content="Listen to Youtube music while coding, studying by combining ambient sounds">
   <meta property="og:image" content="https://i.ibb.co/wwKH0xw/Youtube-Background-Sound.png">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="ytbgsound.vercel.app">
-  <meta property="twitter:url" content="https://ytbgsound.vercel.app/">
-  <meta name="twitter:title" content="Youtube Background Sound">
+  <meta property="twitter:domain" content="calm.wahit.me">
+  <meta property="twitter:url" content="https://calm.wahit.me">
+  <meta name="twitter:title" content="Listen & Calm">
   <meta name="twitter:description" content="Listen to Youtube music while coding, studying by combining ambient sounds">
   <meta name="twitter:image" content="https://i.ibb.co/wwKH0xw/Youtube-Background-Sound.png">
 </head>
@@ -70,11 +70,11 @@
       <div id="volumeControls"
         class="absolute top-[-80px] right-0 z-50 left-0 bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 backdrop-saturate-100 backdrop-contrast-100 rounded-full p-4 justify-center items-center flex gap-4 hidden">
         <div class="tooltip" data-tip="YouTube Video Volume">
-          <input type="range" min="0" max="100" value="5" id="playerVolumeSlider" onchange="changeVolume('player')" />
+          <input type="range" min="0" max="100" value="90" id="playerVolumeSlider" onchange="changeVolume('player')" />
         </div>
 
         <div class="tooltip" data-tip="Ambient Sound Volume">
-          <input type="range" min="0" max="100" value="5" id="soundVolumeSlider" onchange="changeVolume('sound')" />
+          <input type="range" min="0" max="100" value="90" id="soundVolumeSlider" onchange="changeVolume('sound')" />
         </div>
       </div>
 
@@ -102,7 +102,7 @@
 
           <div class="flex gap-4 align-center">
             <input class="w-full rounded-md pl-2" type="text" id="videoURL"
-              placeholder="https://www.youtube.com/watch?v=ir96UnkKIgA" onkeypress="loadVideo()" />
+              placeholder="https://www.youtube.com/watch?v=eiOclO1tf_U" onkeypress="loadVideo()" />
 
             <button class="btn bg-[#3B3B3B] hover:bg-[#4B4B4B] border-none" type="button" onclick="loadVideo()">
               <i class="ph ph-play"></i>
